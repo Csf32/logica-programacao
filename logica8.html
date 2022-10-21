@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+
+
+        var player1 = prompt("Jogador 1: Digite um número");
+        player1 = parseInt(player1);
+
+        var player2 = prompt("Jogador 2: Digite um número");
+        player2 = parseInt(player2);
+
+        if (player1 === player2){
+            alert("Empate");
+        }
+
+        else{
+
+        var sorteio = parseInt( Math.random()*2);
+
+        if(sorteio === 0){
+            
+            if(player1 < player2){
+                alert("Ganhou o jogador 1");
+            }
+            else{
+                alert("Ganhou o jogador 2");
+            }
+        }
+        
+        else{
+            if(player1 > player2){
+                alert("Ganhou o jogador 1")
+            }
+            else{
+                alert("Ganhou o jogado 2")
+            }
+        }
+    }
+
+        
+        
+
+
+    </Script>
+</body>
+</html>

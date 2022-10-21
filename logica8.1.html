@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+
+        var nJogador1 = prompt(" Jogador 1: Digite um número");
+        nJogador1 = parseInt(nJogador1);
+
+        var nJogador2 = prompt(" Jogador 2: Digite outro número");
+        nJogador2 = parseInt(nJogador2);
+
+        if(nJogador1 === nJogador2){
+            alert("Empate");
+        }
+        else{
+            
+            var Sorteio = parseInt(Math.random ()*2);
+            alert("Sorteio: " + Sorteio);
+            
+            if(( Sorteio === 0 && nJogador1 < nJogador2 ) || ( Sorteio === 1 && nJogado1 > nJogador2 ) ){
+                alert("Ganhou o Jogador 1");
+
+            }
+            else{
+                alert("Ganhou o Jogador 2");
+            }
+            
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var n1 = prompt("Digite um número");
+        n1 = parseInt(n1);
+
+       
+        var indice = 0;
+
+        while (indice <= 1000){
+            document.write (n1 + " x " + indice + " = " + (n1 * indice) + "<br>");
+
+            if(indice % 10 === 0 && indice > 0){
+
+                document.write ("<hr>")
+            }
+
+            indice = indice + 1
+        }
+           
+        document.write("Saiu do loop");
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrarAreaAlert()">Botão do Alert</button> 
+    <button onclick="mostrarAreaDiv()">Botão do div</button>
+    
+    <div id="output"></div>
+    <script>
+
+
+        function mostrarAreaAlert(){ 
+            
+            var largura = prompt("Digite a largura");
+            largura = parseInt(largura);
+
+            var altura = prompt("Digite a altura");
+            altura = parseInt(altura);
+            
+            try{
+                var area = CalcularArea(largura, altura);
+
+            }
+            catch(e){
+                alert(e);
+            }
+            alert("Área total é: " + area);
+        
+        }
+
+        function mostrarAreaDiv(){
+           
+            var largura = prompt("Digite a largura");
+            largura = parseInt(largura);
+
+            var altura = prompt("Digite a altura");
+            altura = parseInt(altura);
+
+            // Para tratar o erro no console:
+
+            try{
+                var area = CalcularArea(largura, altura);
+               
+            }
+            catch(e){
+                area = e;
+            }
+            
+            document.querySelector("#output");
+            output.innerHTML = 'Área total é' + area;
+        }
+    
+        function CalcularArea(l, a){ 
+        
+            if(isNaN (l) || isNaN(a)){
+                throw new Error ("Tem que ser um número")
+
+            }
+            return l*a;
+        }
+
+
+    </script>
+    
+</body>
+</html>

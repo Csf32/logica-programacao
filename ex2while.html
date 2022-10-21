@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var moeda = 2500;
+        var ano = 1;
+        var mes = 0;
+    
+        
+        while(moeda <= 55000 ){
+           
+            if( mes % 12 === 0){
+
+            document.write ("<hr>" + ano + " ano: " + "<br>") 
+         
+            
+            ano+= 1
+            }                    
+            document.write( mes + " mês " + ": " + moeda + "<br>")
+            mes+=1;
+            moeda+= 2000;
+            
+            
+            
+        }
+            document.write("sair do loop");
+
+    </script>
+</body>
+</html>

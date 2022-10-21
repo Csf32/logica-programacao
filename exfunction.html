@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="multiplicar()">x</button>
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="dividir()">/</button>
+
+    <div id="output"></div>
+
+    <script>
+
+      document.querySelector("#output"); 
+      var n = prompt("Digite um número");
+      n = parseInt(n);
+      output.innerHTML = n;
+
+      function multiplicar(){
+        var n1 = prompt("Digite outro número");
+        n1 = parseInt(n1);
+        n *= n1;
+        output.innerHTML = n;
+      }
+    
+      function somar(){
+        var n1 = prompt("Digite outro número");
+        n1 = parseInt(n1);
+        n += n1;
+        output.innerHTML = n;
+      }
+
+      function subtrair(){
+        var n1 = prompt("Digite outro número");
+        n1 = parseInt(n1);
+        n -= n1;
+        output.innerHTML = n;
+      }
+
+      function dividir(){
+        var n1 = prompt("Digite outro número");
+        n1 = parseInt(n1);
+        n /= n1;
+        output.innerHTML = n;
+      }
+          
+      
+    </script>
+</body>
+</html>
